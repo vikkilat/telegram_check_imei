@@ -28,7 +28,7 @@
 ### 1. Клонировать репозитарий:
 
 ```
-git clone https://github.com/vikkilat/telegram_aiogram.git
+git clone https://github.com/vikkilat/telegram_check_imei.git
 ```
 
 ### 2. Cоздать и активировать виртуальное окружение:
