@@ -18,7 +18,7 @@ async def check_imei(imei):
             async with session.post(IMEI_API_URL, headers=headers, data=payload) as response:
                 if response.status == 403:
                     return {"error": "Ошибка 403: Доступ запрещен. Проверьте токен."}
-                if response.status != 200:
+                if response.status != 201:
                     return {"error": f"Ошибка {response.status}: {await response.text()}"}
 
                 return await response.json()
